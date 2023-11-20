@@ -1,0 +1,30 @@
+.tarea-formulario {
+  display: flex;
+  margin-bottom: 20px;
+  border-top: 1ch double #ccc;
+  border-bottom: .9px dashed #ccc;
+ 
+}
+
+.tarea-input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Fuzzy Bubbles', sans-serif;
+  border-inline: none;
+  border-color: #fff;
+  text-align: center;
+
+}
+
+.tarea-boton {
+  padding: 0 5px 0;
+  background-color: #6a726a; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+
+}
+
+

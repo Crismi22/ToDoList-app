@@ -1,0 +1,8 @@
+.tareas-lista-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+  font-family: 'Fuzzy Bubbles', sans-serif;
+}

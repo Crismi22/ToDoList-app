@@ -1,0 +1,58 @@
+.tarea-contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.tarea-texto {
+  cursor: pointer;
+  flex-grow: 1;
+  color: black;
+  font-family: 'Fuzzy Bubbles', sans-serif;
+}
+
+.tarea-checkbox {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin-right: 30px;
+  border: .8px solid #808080;
+}
+
+.tarea-checkbox input[type="checkbox"] {
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.tarea-tick-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tarea-tick {
+  color: #4caf50; /* Color verde para el tilde */
+  font-size: 40px;
+  display: none;
+}
+
+.tarea-checkbox input[type="checkbox"]:checked + .tarea-tick-container .tarea-tick {
+  display: inline-block;
+}
+
+
+.tarea-contenedor-iconos {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+

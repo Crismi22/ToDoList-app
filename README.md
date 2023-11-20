@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+![Alt text](image.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Aplicación de Gestión de Tareas con React
 
-## Available Scripts
+## Descripción General
 
-In the project directory, you can run:
+Esta aplicación web fue creada utilizando React para gestionar una lista de tareas. Utiliza componentes funcionales, el hook `useState` para el manejo del estado, el hook `useEffect` para realizar efectos secundarios y varios eventos para la interacción del usuario.
 
-### `npm start`
+## Componentes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Componente TaskList (`TaskList.js`)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Este componente muestra la lista de tareas. Recibe la lista de tareas y funciones para manejar eventos relacionados con las tareas como propiedades. Cada tarea está representada por el componente `TaskItem`.
 
-### `npm test`
+### Componente TaskItem (`TaskItem.js`)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Este componente representa individualmente una tarea, mostrando el nombre de la tarea y un botón para marcarla como completada. Utiliza estado local para gestionar la apariencia de la tarea, como tachado cuando está completada.
 
-### `npm run build`
+### Componente TaskForm (`TaskForm.js`)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Este componente contiene un formulario para agregar nuevas tareas. Utiliza estado local para gestionar la entrada del usuario y envía la nueva tarea a la lista principal.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Manejo de Estado con `useState`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Estado Principal (`App.js`)
 
-### `npm run eject`
+El componente principal utiliza el hook `useState` para gestionar el estado de la lista de tareas. Cada tarea es un objeto con propiedades como id, nombre y completada.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Efectos con `useEffect`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Efecto de Actualización (`App.js`)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+El hook `useEffect` en el componente principal se utiliza para realizar una acción (por ejemplo, mostrar un mensaje) cuando el estado de la lista de tareas cambia.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Interacción del Usuario - Eventos
 
-## Learn More
+### Eventos en el Componente TaskList (`TaskList.js`)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Se implementan eventos que permiten al usuario interactuar con cada tarea (marcar como completada, eliminar, etc.). Estos eventos modifican el estado principal (`tasks`).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Eventos en el Componente TaskForm (`TaskForm.js`)
 
-### Code Splitting
+Se implementan eventos para gestionar la entrada del usuario y agregar nuevas tareas a la lista.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Estilo
 
-### Analyzing the Bundle Size
+Se aplican estilos CSS para mejorar la apariencia de los componentes. Puedes utilizar bibliotecas como styled-components si lo deseas.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Características Opcionales
 
-### Making a Progressive Web App
+### Persistencia de Datos con `localStorage`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Característica opcional implementada: la aplicación persiste las tareas incluso después de recargar la página utilizando `localStorage`.
 
-### Advanced Configuration
+## Inicio Rápido
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Clona el repositorio.
+2. Navega al directorio del proyecto.
+3. Ejecuta `npm install` para instalar las dependencias.
+4. Ejecuta `npm start` para iniciar el servidor de desarrollo.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### ¡Trabajo Grupal - Grupo E!
